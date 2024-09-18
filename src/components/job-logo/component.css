@@ -1,0 +1,13 @@
+@import '../../variables.css';
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo-container svg {
+  width: 100px;
+  height: auto;
+}

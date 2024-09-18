@@ -17,8 +17,28 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env'],
-          }
+          },
         },
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'raw-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  require('postcss-import'),
+                ],
+              },
+            },
+          },
+        ],
+      },
+      {
+        test: /\.svg$/,
+        use: 'raw-loader',
       },
     ],
   },

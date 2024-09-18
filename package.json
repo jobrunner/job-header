@@ -2,6 +2,9 @@
   "name": "@jobrunner/job-header",
   "version": "0.0.4",
   "main": "dist/bundle.js",
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"

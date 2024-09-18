@@ -14,6 +14,6 @@ Use the header like:
   </job-header>
 ```
 
-The result in an hosting app would be that ugly thing:
+The result in an hosting app should be that ugly thing:
 
-![](result.png?raw=true)
+![](https://raw.githubusercontent.com/jobrunner/job-header/main/result.png?raw=true)

@@ -1,0 +1,17 @@
+@import './variables.css';
+
+header {
+  background-color: var(--color-background);
+  color: var(--color-text); 
+  text-align: center;
+  padding: 1rem;
+}
+
+p {
+  text-decoration: underline overline var(--color-accent);
+}
+
+::slotted(img) {
+  max-width: 100px;
+  margin-right: 1rem;
+}

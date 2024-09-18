@@ -1,27 +1,24 @@
 import { LitElement, html, css } from 'lit-element';
+import './components/job-logo/component.js';
 
-class JobHeaderComponent extends LitElement {
-  static styles = css`
-    header {
-      background-color: #4CAF50;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-    ::slotted(img) {
-      max-width: 100px;
-      margin-right: 1rem;
-    }    
-  `;
+import styles from './index.css';
+
+class JobHeader extends LitElement {
+  static get styles() {
+    return css([styles]);
+  }
+
   render() {
     return html`
       <header>
+        <job-logo></job-logo>
         <slot name="image"></slot>
         <h1>
           <slot></slot>
         </h1>
+        <p>job-header experiment</p>
       </header>
   `;
 }}
 
-customElements.define('job-header', JobHeaderComponent);
+customElements.define('job-header', JobHeader);

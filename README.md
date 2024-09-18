@@ -2,7 +2,7 @@
 A simple header web component.
 
 ## Import
-import tbd.
+npm install @jobrunner/job-header
 
 ## Usage
 Use the header like:
